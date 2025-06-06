@@ -1,0 +1,26 @@
+[project]
+name = "wesola-lapka-remake"
+version = "0.1.0"
+description = "Customised and enhanced version of wesolalapka.pl"
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "django (>=5.2.2,<6.0.0)",
+    "django-livereload-server (>=0.5.1,<0.6.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.0"
+pytest-django = "^4.11.1"
+pylint = "^3.3.7"
+mypy = "^1.16.0"
+coverage = "^7.8.2"
+

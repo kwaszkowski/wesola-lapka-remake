@@ -1,0 +1,273 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wesoła Łapka - Szkolenie Psów | Kursy i szkolenia online </title>
+    <link rel="icon" href="{% static 'core/res/lapka-logo.png' %}">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="nav-container" class="container-fluid position-fixed">
+      <nav class="container navbar navbar-expand-lg navbar-light">
+        <img src="{% static 'core/res/lapka-logo.png' %}" alt="Icon"
+        style="width: 32px; height: 32px; margin-right: 8px;">
+        <a class="navbar-brand font-weight-bold float-left" href="#">Wesoła Łapka</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse d-l-flex justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Społeczność</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#advantages">Szkolenia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mission">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Klub</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section id="landing">
+      <div class="container text-center landing">
+        <div class="row">
+          <div
+            class="col-md-5 offset-3 text-left landing-text-container text-center"
+          >
+            <h4 class="mb-0 display-3 font-weight-bold">Kursy i Szkolenia Psów i ich Ludzi</h4>
+            <h1 class="display-5">Od 2007 roku pomagamy psom i ich opiekunom, takim jak Ty dogadać się, rozwiązać problemy i prowadzić szczęśliwe życie</h1>
+            <p class="my-3 text-center">Też to umiesz</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>O nas</h1>
+            <span class="separator"></span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              viverra luctus ipsum, ut molestie purus tincidunt nec. Suspendisse
+              suscipit diam ut congue pellentesque. Vestibulum vestibulum ac
+              enim eu lacinia. Donec ut lacinia mi. Aenean mattis quam non
+              accumsan hendrerit. Cras ac dolor gravida, commodo arcu quis,
+              accumsan massa. Fusce metus nisl, suscipit ut ultricies sit amet,
+              consectetur vel eros.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="about-img-container text-center">
+              <img class="img-fluid" src="./res/logo-2582748_640.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <div class="container">
+        <h1 class="text-center mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos modi natus beatae aliquid fuga velit non laborum, odio eaque rerum repudiandae cupiditate dolorum. Expedita earum vitae vero doloremque omnis quis.
+        </h1>
+        <h5 class="text-center mb-4">
+          Poznaj naszych klientów:
+        </h5>
+        <table class="table table-striped table-dark">
+          <caption>
+            Nowi klienci
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Imię</th>
+              <th scope="col">Nazwisko</th>
+              <th scope="col">Miejscowość</th>
+              <th scope="col">Nazwa firmy</th>
+            </tr>
+          </thead>
+          <tbody id="list"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="advantages">
+      <div class="container">
+        <div class="mb-5 text-center">
+          <h1>Dlaczego powinieneś nas wybrać?</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+            quis<br />
+            quidem ducimus perferendis porro neque est beatae voluptates,
+            magnam, blanditiis quidem <br />
+            ducimus perferendis porro neque est beatae voluptates, magnam,
+            blanditiis
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="card col-sm-4 my-2 mx-4 mx-md-0">
+            <img class="card-img-top" src="./res/page.svg" />
+            <div class="card-body">
+              <h5 class="card-title">Strona HTML 5</h5>
+              <p class="card-text">Responsywne strony</p>
+            </div>
+          </div>
+
+          <div class="card col-sm-4">
+            <img class="card-img-top" src="./res/zarzadzanie.svg" />
+            <div class="card-body">
+              <h5 class="card-title">Zarządzanie</h5>
+              <p class="card-text">Dowiedz się jak zarządzać stroną</p>
+            </div>
+          </div>
+
+          <div class="card col-sm-4">
+            <img
+              class="card-img-top img-fluid mx-auto"
+              src="./res/tworcy.svg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Twórcy</h5>
+              <p class="card-text">Aplikacje e-commerce</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" >
+      <div class="container text-light">
+        <div class="row">
+          <div class="col text-center py-5 my-auto">
+            <h1>Nasza misja</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+              nesciunt voluptatum deleniti nulla fuga, amet sequi ab fugit,
+              ipsum error incidunt optio voluptates cupiditate sint consectetur
+              quibusdam. Tempore, quas nulla. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Totam nesciunt voluptatum deleniti
+              nulla fuga, amet sequi ab fugit, ipsum error incidunt optio
+              voluptates cupiditate sint consectetur quibusdam. Tempore, quas
+              nulla.
+            </p>
+            <div class="card mt-5">
+              <i class="fa fa-thumbs-up fa-6x" aria-hidden="true"></i>
+
+              <div class="card-body">
+                <h5 class="card-title">2137 ZADOWOLONYCH KLIENTÓW</h5>
+                <p class="card-text">Dołącz do nich!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="container">
+        <h1 class="text-center mb-5">Znajdziesz nas tutaj</h1>
+        <div class="map-container text-center mb-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.0677641922666!2d22.49872924256031!3d51.23624687111209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722583441c1f921%3A0x99657ccf1c585d9a!2sKonstantyn%C3%B3w%201H%2C%2020-708%20Lublin!5e0!3m2!1spl!2spl!4v1651253497027!5m2!1spl!2spl"
+            width="600px"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 my-4 md-my-0">
+            <h3>Kontakt</h3>
+            <span class="separator"></span>
+            <p>10-100 Lublin</p>
+            <p>ul. Przykład 1/20</p>
+            <p>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="#">123-123-123</a>
+            </p>
+            <p>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <a href="#">aplikacje@poczta.pl</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 my-4 md-my-0">
+            <h3>Godziny otwarcia</h3>
+            <span class="separator"></span>
+            <p>Poniedziałek - piątek 8:00 - 21:00</p>
+            <p>Weekend 12:00 - 15:00</p>
+          </div>
+
+          <div class="col-md-4 my-4 md-my-0">
+            <h3>Polub nas</h3>
+            <span class="separator"></span>
+            <a href="#"><i class="bi bi-facebook fa-3x"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="bottom-section py-3 text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <span>Copyright &copy; 2024</span>
+          </div>
+          <div class="col-6">
+            <span>Aplikacja</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js" async></script>
+  </body>
+</html>

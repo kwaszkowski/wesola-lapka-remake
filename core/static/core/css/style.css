@@ -1,0 +1,155 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap"); */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-padding-top: 60px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    height: 200vh;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display-5, .display-6, .navbar-brand {
+    font-family: 'Courier New', Courier, monospace, cursive;
+  }
+  
+  #nav-container {
+    z-index: 5;
+    background-color: #ffffff;
+
+  }
+  
+  .navbar-nav .nav-item {
+    transition: all 0.2s ease-in-out;
+  }
+  .navbar-nav .nav-item .nav-link {
+    color: #000 !important;
+  }
+  .navbar-nav .nav-item.active {
+    border-bottom: 2px solid #000;
+  }
+  
+  section {
+    margin-bottom: 7rem;
+  }
+  
+  #landing {
+    background-image: url("/static/core/res/Wesola-Lapka-glowna.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #dc7d3e;
+    color:white;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .landing-text-container {
+    margin-top: 15rem;
+    padding: 2rem;
+    /* background-color: rgba(255, 255, 255, 0.815); */
+    float:left;
+    width: auto;
+    border-radius: 5px;
+    box-shadow: inset 2px 0px 45px -10px rgb(66, 68, 90);
+  }
+  
+  .about-left-col {
+    align-items: center;
+  }
+  
+  .separator {
+    display: flex;
+    width: 120px;
+    border-top: 2px solid #000;
+    padding-bottom: 25px;
+  }
+  
+  .about-img-container img {
+    max-width: 70%;
+  }
+  
+  #advantages {
+    background-color: #f7f7f7;
+    padding-bottom: 5rem;
+    min-height: 600px;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  #advantages .container {
+    padding-top: 5rem;
+  }
+  
+  .card {
+    border: none;
+    text-align: center;
+    align-items: center;
+    background-color: inherit;
+  }
+  .card img {
+    max-width: 160px;
+    height: 144px;
+  }
+  
+  #footer {
+    padding-top: 2.5rem;
+    background-color: #f7f7f7;
+  }
+  
+  #mission {
+    min-height: 450px;
+    margin-bottom: 0;
+    background-color: #dc7d3e;
+  }
+  
+  .list-group, .list-group-item {
+    background-color: inherit;
+  }
+  
+  #map .container {
+    padding-top: 5rem;
+  }
+  
+  .map-container {
+    overflow: hidden;
+    padding-bottom: 45%;
+    position: relative;
+    height: 0;
+  }
+  
+  .map-container iframe {
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .table-dark {
+    background-color: #ec660d;
+  }
+  
+  .bottom-section {
+    background-color: #dc7d3e;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .landing-text-container {
+      margin-top: 50%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+  
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }/*# sourceMappingURL=style.css.map */
