@@ -27,10 +27,9 @@
     />
   </head>
   <body>
-    <div id="nav-container" class="container-fluid position-fixed">
+    <div id="nav-container">
       <nav class="container navbar navbar-expand-lg navbar-light">
-        <img src="{% static 'core/res/lapka-logo.png' %}" alt="Icon"
-        style="width: 32px; height: 32px; margin-right: 8px;">
+        <img class="website-logo" src="{% static 'core/res/lapka-logo.png' %}" alt="Icon"/>
         <a class="navbar-brand font-weight-bold float-left" href="#">Wesoła Łapka</a>
         <button
           class="navbar-toggler"
@@ -74,9 +73,17 @@
           <div
             class="col-md-8 offset-0 text-left landing-text-container text-left"
           >
-            <h2 class="mb-0 display-4 font-weight-bold">Kursy i Szkolenia<br> Psów i ich Ludzi</h4>
-            <h5 class="display-5">Od 2007 roku pomagamy psom i ich opiekunom, takim jak Ty dogadać się, rozwiązać problemy i prowadzić szczęśliwe życie</h1>
+            <h2 class="hero-text-container display-4 font-weight-bold lh-2">Kursy i Szkolenia<br> Psów i ich Ludzi</h4>
+            <h5 class="hero-text-container display-5">Od 2007 roku pomagamy psom i ich opiekunom, takim jak Ty <br> dogadać się, rozwiązać problemy i prowadzić szczęśliwe życie</h1>
           </div>
+        </div>
+        <div class="hero-button-container">
+        <a class="hero-button" href="#about">Kursy zawodowe</a>
+        <a class="hero-button" href="#about">Kursy online</a>
+        <a class="hero-button" href="#about">Kursy stacjonarne</a>
+        </div>
+
+        </div>
         </div>
       </div>
     </section>
@@ -85,7 +92,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h1>O nas</h1>
+            <h5 class="">Szkolenia online</h5>
+            <h1>Wesoła Łapka</h1>
             <span class="separator"></span>
             <p>
               Nauczymy Cię, jak wychować Twojego psa – od szczeniaka po dorosłego – z poszanowaniem jego naturalnych instynktów. Dzięki naszym wskazówkom Twój pies stanie się wspaniałym towarzyszem, który przyniesie Ci radość i spokój na co dzień, oraz będzie idealnym kompanem na wycieczkach i podczas zabawy. Jeśli Twój czworonożny przyjaciel sprawia kłopoty, na przykład jest nadmiernie pobudliwy, agresywny lub wykazuje inne trudne zachowania, pomożemy Ci skutecznie je rozwiązać.

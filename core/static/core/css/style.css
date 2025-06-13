@@ -21,17 +21,35 @@
   }
   
   #nav-container {
+    display: flex;
     z-index: 5;
     background-color: #ffffff;
+    position: fixed;
+    height:10%;
+    width:100%;
+    border:blue solid 2px;
+    margin-top: 0;
+    align-self: center;
+  }
+
+  .navbar{
+    border:pink solid 2px;
+    min-width:100%;
+  }
+
+  .website-logo {
+    margin-right:8px
   }
   
   .navbar-nav .nav-item {
     transition: all 0.2s ease-in-out;
-    font-weight: 500;
+    font-weight: 600;
+    /* border:orange solid 2px; */
   }
 
   .navbar-nav .nav-item .nav-link {
     color: #000;
+    border:red solid 2px;
   }
   .navbar-nav .nav-item.active {
     border-bottom: 2px solid #000;
@@ -44,27 +62,44 @@
   #landing {
     background-image: url("/static/core/res/Wesola-Lapka-glowna.jpg.webp");
     background-size: cover;
-    background-position: center;
+    background-position: center; 
     background-repeat: no-repeat;
-    background-color: #dc7d3e;
-    color:white;
-    min-height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
+    min-height: 80vh;
+    min-width: 80vw;
+    scale: 1;
+    color:white;
     margin-bottom: 5rem;
   }
   
   .landing-text-container {
     margin-top: 10rem;
     margin-bottom: 5rem;
-
     padding: 2rem;
-    /* background-color: rgba(255, 255, 255, 0.815); */
     float:left;
     min-width: 768px;
     border-radius: 5px;
-    box-shadow: inset 2px 0px 45px -10px rgb(66, 68, 90);
+    border: solid purple 2px;
+  }
+
+  .hero-button-container {
+    display:flex;
+    margin-left:-1rem;
+    padding-left:1rem;
+    margin-top:-4rem;
+    border:solid red 2px;
+  }
+
+  .hero-button {
+    background-color: transparent;
+    border: solid white 2px;
+    padding: 1em;
+    border-radius:8px;
+    color:white;
+    margin: 0.5rem;
+  }
+  .hero-button:hover {
+    text-decoration: none;
   }
   
   .about-left-col {
@@ -158,5 +193,15 @@
       display: block;
       overflow-x: auto;
       white-space: nowrap;
+    }
+
+    #landing {
+      background-image: url("/static/core/res/Wesola-Lapka-glowna-mobile.jpg.webp");
+      background-size: cover;
+      background-position: center; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 60vh;
+      min-width: 80vw;
     }
   }/*# sourceMappingURL=style.css.map */
